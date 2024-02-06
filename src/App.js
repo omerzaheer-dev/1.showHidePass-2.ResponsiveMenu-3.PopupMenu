@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import PasswordApp from "./password/PasswordApp";
+// import ResponsiveMenu from "./Menu/ResponsiveMenu";
+import PopupModel from "./Model/PopupModel";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <PasswordApp></PasswordApp> */}
+      {/* <ResponsiveMenu></ResponsiveMenu> */}
+      <PopupModel></PopupModel>
     </div>
   );
 }
