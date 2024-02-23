@@ -14,7 +14,9 @@
 
 // import PasswordGenerator from "./PasswordGenerator/PasswordGenerator";
 // import Converter from "./Currency/Converter";
-import CurrencyConverter from "./Currency/CurrencyConverter";
+// import CurrencyConverter from "./Currency/CurrencyConverter";
+
+import Rap from "./NewApp/Rap";
 function App() {
   return (
     <div className="App">
@@ -28,7 +30,8 @@ function App() {
       {/* <System></System> */}
       {/* <PasswordGenerator></PasswordGenerator> */}
       {/* <Converter></Converter> */}
-      <CurrencyConverter></CurrencyConverter>
+      {/* <CurrencyConverter></CurrencyConverter> */}
+      <Rap></Rap>
     </div>
   );
 }

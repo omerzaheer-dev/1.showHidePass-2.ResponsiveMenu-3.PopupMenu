@@ -4,15 +4,15 @@ import useCurrencyInfo from './Hawk'
 
 const CurrencyConverter = () => {
     const [amount,setAmount]=useState(0)
-    const [from,setFrom]=useState("usd")
+    const [frm,setFrm]=useState("usd")
     const [to,setTo]=useState("inr")
     const [convertedAmount,setConvertedAmount]=useState(0)
 
-    const currencyInfo = useCurrencyInfo(from)
+    const currencyInfo = useCurrencyInfo(frm)
     const options = Object.keys(currencyInfo)
     const swap = () => {
-        setFrom(to)
-        setTo(from)
+        setFrm(to)
+        setTo(frm)
         setConvertedAmount(amount)
         setAmount(convertedAmount)
     }
@@ -25,15 +25,15 @@ const CurrencyConverter = () => {
             <form onSubmit={(e)=>{e.preventDefault();
             convert()
             }}>
-                <div className='mb-2'>
-                     <Inp label="From : " amount={amount} selectedCurrency={from} currencyOptions={options} onCurrencyChange={(currency)=>setAmount(amount)}></Inp>
-                </div>
+                {/* <div className='mb-2'>
+                     <Inp label="From : " amount={amount} selectedCurrency={frm} onAmountChange={(amount)=>setAmount(amount)} currencyOptions={options} onCurrencyChange={(currency)=>setAmount(amount)}></Inp>
+                </div> */}
                 <div className='relaive'>
                     <button type='button' onClick={swap} className='absolute md:left-[50%] left-[47%] -translate-x-[50%] -translate-y-[50%] md:px-5 py-1 px-2 text-center text-xl md:text-2xl font-medium md:font-semibold rounded-md bg-[blue] text-white border-white border-[1px] '>swap</button>
                 </div>
-                <div>
-                    <Inp  amount={convertedAmount} selectedCurrency={to} currencyOptions={options} onCurrencyChange={(currency)=>setAmount(amount)}></Inp>
-                </div>
+                {/* <div>
+                    <Inp label="To : " amount={convertedAmount} selectedCurrency={frm} currencyOptions={options} onCurrencyChange={(currency)=>setTo(currency)}></Inp>
+                </div> */}
                     <button className='bg-[blue] p-1 w-full mt-2 mb-2 text-white font-medium md:font-semibold text-xl'>Convert Currency</button>
                     
             </form>
