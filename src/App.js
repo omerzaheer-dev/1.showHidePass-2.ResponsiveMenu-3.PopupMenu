@@ -11,6 +11,10 @@
 // import TodoList from './TodoApp/TodoList';
 
 // import System from "./Tabing/System";
+
+// import PasswordGenerator from "./PasswordGenerator/PasswordGenerator";
+// import Converter from "./Currency/Converter";
+import CurrencyConverter from "./Currency/CurrencyConverter";
 function App() {
   return (
     <div className="App">
@@ -22,6 +26,9 @@ function App() {
       {/* <ReactNotify></ReactNotify> */}
       {/* <TodoList></TodoList>*/}
       {/* <System></System> */}
+      {/* <PasswordGenerator></PasswordGenerator> */}
+      {/* <Converter></Converter> */}
+      <CurrencyConverter></CurrencyConverter>
     </div>
   );
 }
