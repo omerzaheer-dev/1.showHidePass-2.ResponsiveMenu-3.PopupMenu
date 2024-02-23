@@ -10,7 +10,7 @@
 // import 'react-toastify/dist/ReactToastify.css';
 // import TodoList from './TodoApp/TodoList';
 
-import System from "./Tabing/System";
+// import System from "./Tabing/System";
 function App() {
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
       {/* <Faq></Faq> */}
       {/* <ReactNotify></ReactNotify> */}
       {/* <TodoList></TodoList>*/}
-      <System></System>
+      {/* <System></System> */}
     </div>
   );
 }
